@@ -51,3 +51,11 @@ function error(): never {
 let cart: object;
 
 cart = { key: "string" };
+
+// Type Inference
+let message2 = "tipo string inferido";
+
+// o 'e' foi inferido como MouseEvent
+window.addEventListener("click", (e) => {
+  console.log(e.target);
+});
